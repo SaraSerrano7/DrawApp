@@ -1,11 +1,33 @@
+import gettext
+
 import matplotlib.pyplot as plt
 
-SHAPES = ['line', 'circle', 'square']
-COLORS = ['red', 'green', 'blue']
-SIZES = ['little', 'medium', 'big']
+# Set the local directory
+localedir = './locales'
+
+# # Set up your magic function
+#todo: coger por parametro el lenguaje.
+#todo: poner un en.po sin traducit y en.mo
+translate = gettext.translation('base', localedir, languages=['es'])
+translate.install()
+# _ = translate.gettext
+
+# gettext.bindtextdomain('main', 'locale')
+# gettext.textdomain('main')
+_ = translate.gettext
+
+SHAPES = [_('line'), _('circle'), _('square')]
+COLORS = [_('red'), _('green'), _('blue')]
+SIZES = [_('little'), _('medium'), _('big')]
 
 
 def main():
+    # if sys.platform.startswith('win'):
+    #     import locale
+    #     if os.getenv('LANG') is None:
+    #         lang, enc = locale.getdefaultlocale()
+    #         os.environ['LANG'] = lang
+
     shape_wanted = get_shape()
     color_wanted = get_color(shape_wanted)
     size_wanted = get_size(shape_wanted, color_wanted)
@@ -13,9 +35,9 @@ def main():
 
 
 def draw_shape(shape_wanted):
-    if shape_wanted == 'line':
+    if shape_wanted == _('line'):
         figure = plt.Line2D((0, 1), (0, 1), lw=1)
-    elif shape_wanted == 'circle':
+    elif shape_wanted == _('circle'):
         figure = plt.Circle((5, 5), 1)
     else:
         figure = plt.Rectangle((1, 1), 0, 0, fc='black', ec='black')
@@ -35,7 +57,7 @@ def color_shape(figure_drawn, color_wanted):
 
 
 def set_height_width(figure_colored, shape_wanted, size):
-    if shape_wanted == 'line':
+    if shape_wanted == _('line'):
         figure_colored.set_data([0, size], [0, size])
     else:
         figure_colored.set_height(size)
@@ -44,9 +66,9 @@ def set_height_width(figure_colored, shape_wanted, size):
 
 
 def resize_shape(figure_colored, size_wanted, shape_wanted):
-    if size_wanted == 'little':
+    if size_wanted == _('little'):
         figure_resized = set_height_width(figure_colored, shape_wanted, 1)
-    elif size_wanted == 'medium':
+    elif size_wanted == _('medium'):
         figure_resized = set_height_width(figure_colored, shape_wanted, 5)
     else:
         figure_resized = set_height_width(figure_colored, shape_wanted, 10)
@@ -59,44 +81,46 @@ def draw_canvas(shape_wanted, color_wanted, size_wanted):
     figure_colored = color_shape(figure_drawn, color_wanted)
     figure_resized = resize_shape(figure_colored, size_wanted, shape_wanted)
 
-    if shape_wanted == 'line':
+    if shape_wanted == _('line'):
         plt.gca().add_line(figure_resized)
     else:
         plt.gca().add_patch(figure_resized)
 
     plt.axis('scaled')
-    plt.title(f'{size_wanted} {color_wanted} {shape_wanted}')
+    #todo: arreglar esta mierda, que son variables
+    plt.title(_('size_wanted') + ' ' + _('color_wanted') + ' ' + _('shape_wanted'))
     plt.xlim([0, 15])
     plt.ylim([0, 15])
     plt.show()
 
 
 def get_shape():
-    print("Select which shape you want to draw: line, circle or square.")
+    print(_("Select which shape you want to draw: line, circle or square."))
     shape_wanted = input().lower()
     while shape_wanted not in SHAPES:
-        print(f'You misspelled the shape. Please, write it again.')
-        print('What do you want to draw? Line, circle or square?')
+        print(_('You misspelled the shape. Please, write it again.'))
+        print(_('What do you want to draw? Line, circle or square?'))
         shape_wanted = input().lower()
     return shape_wanted
 
 
 def get_color(shape_wanted):
-    print(f'You selected to draw a {shape_wanted}, now select color: red, green or blue.')
+    print(_('You selected to draw a') + ' ' + _(shape_wanted) + ' ' + _(', now select color: red, green or blue.'))
     color_wanted = input().lower()
     while color_wanted not in COLORS:
-        print(f'You misspelled the color. Please, write it again.')
-        print('What color do you want for your shape? Red, green or blue?')
+        print(_('You misspelled the color. Please, write it again.'))
+        print(_('What color do you want for your shape? Red, green or blue?'))
         color_wanted = input().lower()
     return color_wanted
 
 
 def get_size(shape_wanted, color_wanted):
-    print(f'You selected a {color_wanted} {shape_wanted}, now select size: little, medium or big.')
+    print(_('You selected a') + ' ' + _(color_wanted) + ' ' + _(shape_wanted) +
+          _(', now select size: little, medium or big.'))
     size_wanted = input().lower()
     while size_wanted not in SIZES:
-        print(f'You misspelled the size. Please, write it again.')
-        print('What size do you want for your shape? Little, medium or big?')
+        print(_('You misspelled the size. Please, write it again.'))
+        print(_('What size do you want for your shape? Little, medium or big?'))
         size_wanted = input().lower()
     return size_wanted
 

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-11-20 21:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: main.py:16
+msgid "square"
+msgstr "cuadrado"
+
+#: main.py:16 main.py:35 main.py:57 main.py:81
+msgid "line"
+msgstr "linea"
+
+#: main.py:16 main.py:37
+msgid "circle"
+msgstr "circulo"
+
+#: main.py:17 main.py:46 main.py:47
+msgid "red"
+msgstr "rojo"
+
+#: main.py:17 main.py:48 main.py:49
+msgid "green"
+msgstr "verde"
+
+#: main.py:17 main.py:51
+msgid "blue"
+msgstr "azul"
+
+#: main.py:18
+msgid "big"
+msgstr "grande"
+
+#: main.py:18 main.py:66
+msgid "little"
+msgstr "enano"
+
+#: main.py:18 main.py:68
+msgid "medium"
+msgstr "mediano"
+
+#: main.py:87
+msgid "color_wanted"
+msgstr "color deseado"
+
+#: main.py:87
+msgid "shape_wanted"
+msgstr "figura deseada"
+
+#: main.py:87
+msgid "size_wanted"
+msgstr "Grandeza deseada"
+
+#: main.py:94
+msgid "Select which shape you want to draw: line, circle or square."
+msgstr "Selecciona que forma quieres dibujar: linea, circulo o cuadrado."
+
+#: main.py:97
+msgid "You misspelled the shape. Please, write it again."
+msgstr "Has escrito mal el nombre de la figura. Por favor, escribelo de nuevo."
+
+#: main.py:98
+msgid "What do you want to draw? Line, circle or square?"
+msgstr "Que quieres dibujar? Una linea, un circulo o un cuadrado?"
+
+#: main.py:104
+msgid ", now select color: red, green or blue."
+msgstr ", ahora selecciona un color: rojo, verde o azul."
+
+#: main.py:104
+msgid "You selected to draw a"
+msgstr "Has elegido dibujar un/a"
+
+#: main.py:107
+msgid "You misspelled the color. Please, write it again."
+msgstr "Has escrito mal el color. Por favor, escribelo de nuevo."
+
+#: main.py:108
+msgid "What color do you want for your shape? Red, green or blue?"
+msgstr "Que color quieres para tu figura? Rojo, verde o azul?"
+
+#: main.py:114
+msgid "You selected a"
+msgstr "Has seleccionado un"
+
+#: main.py:115
+msgid ", now select size: little, medium or big."
+msgstr ", ahora selecciona la grandeza: enana, mediana o grande."
+
+#: main.py:118
+msgid "You misspelled the size. Please, write it again."
+msgstr "Has escrito mal la grandeza de la figura. Por favor, escribelo de nuevo."
+
+#: main.py:119
+msgid "What size do you want for your shape? Little, medium or big?"
+msgstr "¿Que medida quieres para tu figura? Enana, mediana o grande?"
+
