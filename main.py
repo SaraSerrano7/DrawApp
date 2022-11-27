@@ -1,19 +1,13 @@
 import gettext
-
 import matplotlib.pyplot as plt
+import warnings
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Set the local directory
 localedir = './locales'
-
-# # Set up your magic function
-#todo: coger por parametro el lenguaje.
-#todo: poner un en.po sin traducit y en.mo
-translate = gettext.translation('base', localedir, languages=['es'])
+translate = gettext.translation('en', localedir, languages=['en'])
 translate.install()
-# _ = translate.gettext
-
-# gettext.bindtextdomain('main', 'locale')
-# gettext.textdomain('main')
 _ = translate.gettext
 
 SHAPES = [_('line'), _('circle'), _('square')]
@@ -22,12 +16,6 @@ SIZES = [_('little'), _('medium'), _('big')]
 
 
 def main():
-    # if sys.platform.startswith('win'):
-    #     import locale
-    #     if os.getenv('LANG') is None:
-    #         lang, enc = locale.getdefaultlocale()
-    #         os.environ['LANG'] = lang
-
     shape_wanted = get_shape()
     color_wanted = get_color(shape_wanted)
     size_wanted = get_size(shape_wanted, color_wanted)
@@ -46,9 +34,10 @@ def draw_shape(shape_wanted):
 
 
 def color_shape(figure_drawn, color_wanted):
-    if color_wanted == 'red':
+    print(color_wanted)
+    if color_wanted == _('red'):
         figure_drawn.set_color('red')
-    elif color_wanted == 'green':
+    elif color_wanted == _('green'):
         figure_drawn.set_color('green')
     else:
         figure_drawn.set_color('blue')
@@ -87,8 +76,7 @@ def draw_canvas(shape_wanted, color_wanted, size_wanted):
         plt.gca().add_patch(figure_resized)
 
     plt.axis('scaled')
-    #todo: arreglar esta mierda, que son variables
-    plt.title(_('size_wanted') + ' ' + _('color_wanted') + ' ' + _('shape_wanted'))
+    plt.title(_('Your figure'))
     plt.xlim([0, 15])
     plt.ylim([0, 15])
     plt.show()
@@ -98,6 +86,8 @@ def get_shape():
     print(_("Select which shape you want to draw: line, circle or square."))
     shape_wanted = input().lower()
     while shape_wanted not in SHAPES:
+        print(shape_wanted)
+        print(SHAPES)
         print(_('You misspelled the shape. Please, write it again.'))
         print(_('What do you want to draw? Line, circle or square?'))
         shape_wanted = input().lower()

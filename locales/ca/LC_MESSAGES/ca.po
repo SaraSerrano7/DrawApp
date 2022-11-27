@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-11-27 10:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: main.py:16
+msgid "square"
+msgstr "quadrat"
+
+#: main.py:16 main.py:29 main.py:52 main.py:76
+msgid "line"
+msgstr "linia"
+
+#: main.py:16 main.py:31
+msgid "circle"
+msgstr "cercle"
+
+#: main.py:17
+msgid "blue"
+msgstr "blau"
+
+#: main.py:17 main.py:41
+msgid "red"
+msgstr "vermell"
+
+#: main.py:17 main.py:43
+msgid "green"
+msgstr "verd"
+
+#: main.py:18
+msgid "big"
+msgstr "gran"
+
+#: main.py:18 main.py:61
+msgid "little"
+msgstr "petit"
+
+#: main.py:18 main.py:63
+msgid "medium"
+msgstr "mitja"
+
+#: main.py:82
+msgid "Your figure"
+msgstr "La teva figura"
+
+#: main.py:90
+msgid "Select which shape you want to draw: line, circle or square."
+msgstr "Selecciona quina figura vols dibuixar: linia, cercle o quadrat"
+
+#: main.py:95
+msgid "You misspelled the shape. Please, write it again."
+msgstr "Has escrit malament el nom de la figura. Torna-ho a escriure."
+
+#: main.py:96
+msgid "What do you want to draw? Line, circle or square?"
+msgstr "Que vols dibuixar? Linia, cercle o quadrat?"
+
+#: main.py:102
+msgid ", now select color: red, green or blue."
+msgstr ", ara selecciona el color: vermell, verd o blau"
+
+#: main.py:102
+msgid "You selected to draw a"
+msgstr "Has seleccionat un/a"
+
+#: main.py:105
+msgid "You misspelled the color. Please, write it again."
+msgstr "Has escrit malament el color. Torna-ho a escriure."
+
+#: main.py:106
+msgid "What color do you want for your shape? Red, green or blue?"
+msgstr "Quin color vols per a la teva figura? Vermell, verd o blau?"
+
+#: main.py:112
+msgid "You selected a"
+msgstr "Has seleccionat un/a"
+
+#: main.py:113
+msgid ", now select size: little, medium or big."
+msgstr ", ara selecciona el tamany: petit, mitja o gran."
+
+#: main.py:116
+msgid "You misspelled the size. Please, write it again."
+msgstr "Has escrit malament el tamany. Torna-ho a escriure."
+
+#: main.py:117
+msgid "What size do you want for your shape? Little, medium or big?"
+msgstr "Quin tamany vols per a la teva figura?"
+

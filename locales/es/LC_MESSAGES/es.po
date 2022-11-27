@@ -45,11 +45,15 @@ msgstr "grande"
 
 #: main.py:18 main.py:66
 msgid "little"
-msgstr "enano"
+msgstr "enana"
 
 #: main.py:18 main.py:68
 msgid "medium"
-msgstr "mediano"
+msgstr "mediana"
+
+#: main.py:82
+msgid "Your figure"
+msgstr "Tu figura"
 
 #: main.py:87
 msgid "color_wanted"
@@ -105,5 +109,8 @@ msgstr "Has escrito mal la grandeza de la figura. Por favor, escribelo de nuevo.
 
 #: main.py:119
 msgid "What size do you want for your shape? Little, medium or big?"
-msgstr "¿Que medida quieres para tu figura? Enana, mediana o grande?"
+msgstr "Que medida quieres para tu figura? Enana, mediana o grande?"
 
+#: main.py:128
+msgid "Usage: ./main.py <language>"
+msgstr "Uso: ./main.py <idioma>"

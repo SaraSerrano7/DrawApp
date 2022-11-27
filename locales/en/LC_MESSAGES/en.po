@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-11-21 00:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: main.py:19
+msgid "square"
+msgstr ""
+
+#: main.py:19 main.py:38 main.py:60 main.py:84
+msgid "line"
+msgstr ""
+
+#: main.py:19 main.py:40
+msgid "circle"
+msgstr ""
+
+#: main.py:20
+msgid "blue"
+msgstr ""
+
+#: main.py:20
+msgid "green"
+msgstr ""
+
+#: main.py:20
+msgid "red"
+msgstr ""
+
+#: main.py:21
+msgid "big"
+msgstr ""
+
+#: main.py:21 main.py:69
+msgid "little"
+msgstr ""
+
+#: main.py:21 main.py:71
+msgid "medium"
+msgstr ""
+
+#: main.py:82
+msgid "Your figure"
+msgstr ""
+
+#: main.py:90
+msgid "color_wanted"
+msgstr ""
+
+#: main.py:90
+msgid "shape_wanted"
+msgstr ""
+
+#: main.py:90
+msgid "size_wanted"
+msgstr ""
+
+#: main.py:97
+msgid "Select which shape you want to draw: line, circle or square."
+msgstr ""
+
+#: main.py:100
+msgid "You misspelled the shape. Please, write it again."
+msgstr ""
+
+#: main.py:101
+msgid "What do you want to draw? Line, circle or square?"
+msgstr ""
+
+#: main.py:107
+msgid ", now select color: red, green or blue."
+msgstr ""
+
+#: main.py:107
+msgid "You selected to draw a"
+msgstr ""
+
+#: main.py:110
+msgid "You misspelled the color. Please, write it again."
+msgstr ""
+
+#: main.py:111
+msgid "What color do you want for your shape? Red, green or blue?"
+msgstr ""
+
+#: main.py:117
+msgid "You selected a"
+msgstr ""
+
+#: main.py:118
+msgid ", now select size: little, medium or big."
+msgstr ""
+
+#: main.py:121
+msgid "You misspelled the size. Please, write it again."
+msgstr ""
+
+#: main.py:122
+msgid "What size do you want for your shape? Little, medium or big?"
+msgstr ""
+
+#: main.py:128
+msgid "Usage: ./main.py <language>"
+msgstr ""
