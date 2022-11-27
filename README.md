@@ -9,13 +9,13 @@ Actually there are three languages supported:
 - Spanish -- 'es'
 - Catalan -- 'ca'
 
-To switch easily between languages, line 9:
+To switch easily between languages, line 10:
 
     translate = gettext.translation(<language>, localedir, languages=[<language>])
 
 must be changed, where `<language>` is one of the three languages mentioned before.
 
-When the program is executed, you must answer 3 questions:
+When the program is executed with run configuration 'main', you must answer 3 questions:
 - The shape you want to draw (line, square or circle)
 - The color you want your figure to be (red, green or blue)
 - The size you want your figure to be (little, medium or big)
