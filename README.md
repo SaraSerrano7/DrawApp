@@ -2,7 +2,7 @@
 
 ## How to use ##
 
-This is the version for Java of DrawApp that works for Windows.
+This is the version for Python of DrawApp that works for Windows.
 
 Actually there are three languages supported: 
 - English -- 'en'
